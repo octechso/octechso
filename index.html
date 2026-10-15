@@ -1,63 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OC Tech Solutions - Inicio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OC Tech Solutions</title>
+  <!-- Ruta real a tu archivo CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Navegación Superior y Logo perfectamente alineados en la línea del centro -->
-    <header class="header-navbar">
-        <div class="logo-container">
-            <a href="index.html">
-                <img src="assets/img/OCTECHa.png" alt="OC Tech Solutions" class="logo">
-            </a>
+  <!-- ENCABEZADO CON LOGO DESTACADO -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#inicio" class="logo-link">
+        <img src="assets/img/OC TECH.png" alt="OC Tech Solutions Logo" class="logo-img">
+      </a>
+      <nav class="nav-menu">
+  <a href="#inicio" class="nav-btn active">INICIO</a>
+  <a href="#servicios" class="nav-btn">SERVICIOS</a>
+  <a href="#nosotros" class="nav-btn">NOSOTROS</a>
+  <a href="contacto.html" class="nav-btn btn-highlight">CONTÁCTANOS</a>
+</nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN INICIO CON CARRUSEL DE TUS IMÁGENES REALES -->
+  <section id="inicio" class="hero-section">
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <div class="slide active">
+          <img src="assets/img/man.jpg" alt="Mantenimiento y Reparación de Computadores">
+          <div class="caption">Mantenimiento y Reparación de Computadores</div>
         </div>
-        <nav class="nav-links">
-            <a href="index.html" class="btn-glow active">INICIO</a>
-            <a href="#servicios" class="btn-glow">SERVICIOS</a>
-            <a href="#nosotros" class="btn-glow">NOSOTROS</a>
-            <a href="contacto.html" class="btn-glow">CONTÁCTANOS</a>
-        </nav>
-    </header>
+        <div class="slide">
+          <img src="assets/img/ser.jpg" alt="Diagnóstico Avanzado de Hardware">
+          <div class="caption">Diagnóstico Avanzado de Hardware</div>
+        </div>
+        <div class="slide">
+          <img src="assets/img/soft.jpg" alt="Soporte Técnico y Optimización de Software">
+          <div class="caption">Soporte Técnico y Optimización de Software</div>
+        </div>
+        <div class="slide">
+          <img src="assets/img/ven.jpg" alt="Venta y Ensamble de Equipos de Alto Rendimiento">
+          <div class="caption">Venta y Ensamble de Equipos de Alto Rendimiento</div>
+        </div>
+        <div class="slide">
+          <img src="assets/img/inte.jpg" alt="Infraestructura y Soluciones en Redes">
+          <div class="caption">Infraestructura y Soluciones en Redes</div>
+        </div>
+        <div class="slide">
+          <img src="assets/img/mesa a.jpg" alt="Asesoría Técnica y Consultoría TI Corporativa">
+          <div class="caption">Asesoría Técnica y Consultoría TI Corporativa</div>
+        </div>
+      </div>
+      <!-- BOTONES DE NAVEGACIÓN -->
+      <button class="prev-btn" id="prevBtn">&#10094;</button>
+      <button class="next-btn" id="nextBtn">&#10095;</button>
+    </div>
+  </section>
 
-    <!-- Slider / Carrusel Central -->
-    <main class="main-content">
-        <section class="slider-section">
-            <div class="slider-container">
-                <div class="slide active">
-                    <img src="assets/img/mesa a.jpg" alt="Mantenimiento y Reparación de Computadores">
-                    <div class="slide-caption">Mantenimiento y Reparación de Computadores</div>
-                </div>
-            </div>
-        </section>
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios" class="section-container">
+    <h2 class="section-title">Nuestros Servicios Especializados</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Reparación de Hardware</h3>
+        <p>Diagnóstico avanzado, cambio de componentes y optimización profunda para equipos de escritorio y portátiles.</p>
+      </div>
+      <div class="service-card">
+        <h3>Mantenimiento de Software</h3>
+        <p>Instalación de sistemas operativos, depuración de código, desinfección de malware y copias de seguridad.</p>
+      </div>
+      <div class="service-card">
+        <h3>Venta de Computadores</h3>
+        <p>Equipos orientados a rendimiento empresarial, estaciones de trabajo y tecnología de última generación.</p>
+      </div>
+      <div class="service-card">
+        <h3>Soluciones TI Integrales</h3>
+        <p>Infraestructura de redes, soporte corporativo y administración integral para llevar tu negocio al siguiente nivel.</p>
+      </div>
+    </div>
+  </section>
 
-        <!-- Servicios Especializados -->
-        <section id="servicios" class="services-section">
-            <h2 class="section-title">Nuestros Servicios Especializados</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Reparación de Hardware</h3>
-                    <p>Diagnóstico avanzado, cambio de componentes y optimización profunda para equipos de escritorio y portátiles.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Mantenimiento de Software</h3>
-                    <p>Instalación de sistemas operativos, depuración de código, desinfección de malware y copias de seguridad.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Venta de Computadores</h3>
-                    <p>Equipos orientados a rendimiento empresarial, estaciones de trabajo y tecnología de última generación.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Soluciones TI Integrales</h3>
-                    <p>Infraestructura de redes, soporte corporativo y administración integral para llevar tu negocio al siguiente nivel.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <!-- SECCIÓN NOSOTROS -->
+  <section id="nosotros" class="section-container bg-alt">
+    <h2 class="section-title">Sobre OC Tech Solutions</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Nuestra Historia</h3>
+        <p>Fundada con la visión de proporcionar soluciones tecnológicas accesibles y de alta calidad, OC Tech Solutions nació para resolver problemas complejos de soporte, infraestructura y mantenimiento técnico para empresas y usuarios particulares.</p>
+        <p>A lo largo de nuestra trayectoria, nos hemos adaptado a las nuevas exigencias del mercado manteniendo siempre el compromiso con la excelencia y la satisfacción de nuestros clientes.</p>
+      </div>
+      <div class="about-boxes">
+        <div class="info-card">
+          <h4>Misión</h4>
+          <p>Garantizar la continuidad y eficiencia tecnológica de nuestros clientes a través de servicios especializados de mantenimiento, reparación y consultoría TI.</p>
+        </div>
+        <div class="info-card">
+          <h4>Visión</h4>
+          <p>Ser reconocidos como el aliado estratégico en tecnología de referencia en la región, ofreciendo soluciones innovadoras y de alta fiabilidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- SECCIÓN CONTACTO INTEGRADA Y ELEGANTE -->
+  <section id="contacto" class="section-container">
+    <h2 class="section-title">Contáctanos</h2>
+    <p class="section-subtitle">Estamos listos para asistirte. Ponte en contacto a través de nuestros canales o envíanos un mensaje.</p>
+
+    <div class="contact-page-grid">
+      <!-- CANALES DIRECTOS Y REDES SOCIALES -->
+      <div class="contact-card-info">
+        <h2>Canales Directos</h2>
+        <p>Comunícate con nuestro equipo de soporte e infraestructura inmediatamente:</p>
+
+        <div class="contact-buttons-group">
+          <!-- Botón de WhatsApp -->
+          <a href="https://wa.me/573162925823?text=Hola,%20requiero%20asistencia%20de%20OC%20Tech%20Solutions" target="_blank" class="btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Chatear por WhatsApp
+          </a>
+
+          <!-- Enlace directo para redactar en Gmail en el navegador -->
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=octechsolu@gmail.com" target="_blank" class="btn-email">
+  <i class="fas fa-envelope"></i> octechsolu@gmail.com
+</a>
+        </div>
+
+        <div class="social-links-container">
+          <h3>Síguenos en Redes Sociales</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="social-icon facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-icon youtube" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="location-box">
+          <p><i class="fas fa-phone-alt"></i> <strong>Línea de Atención:</strong> +57 3162925823</p>
+          <p><i class="fas fa-map-marker-alt"></i> <strong>Ubicación:</strong> Pitalito, Huila, Colombia</p>
+          <p><i class="fas fa-clock"></i> <strong>Horario:</strong> Lunes a Sábado - 8:00 AM a 6:00 PM</p>
+        </div>
+      </div>
+
+      <!-- FORMULARIO BIEN ESTRUCTURADO -->
+      <div class="contact-card-form">
+        <h2>Envíanos un Mensaje</h2>
+        <form class="styled-contact-form" id="contactHomeForm">
+          <div class="form-group">
+            <label for="homeNombre">Nombre Completo</label>
+            <input type="text" id="homeNombre" placeholder="Ej. Juan Pérez" required>
+          </div>
+
+          <div class="form-group">
+            <label for="homeEmail">Correo Electrónico</label>
+            <input type="email" id="homeEmail" placeholder="ejemplo@correo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="homeTelefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="homeTelefono" placeholder="+57 300 000 0000">
+          </div>
+
+          <div class="form-group">
+            <label for="homeMensaje">Mensaje</label>
+            <textarea id="homeMensaje" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit-page">
+            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ruta real a tu archivo JS -->
+  <script src="js/slider.js"></script>
 </body>
-</html>>
+</html>
